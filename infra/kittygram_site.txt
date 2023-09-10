@@ -1,0 +1,5 @@
+IP: 158.160.1.61;
+name_taski: https://taskiforeveryone.servehttp.com;
+name_kittygram: https://otherkittygram.ddns.net;
+login: admin;
+password: qwerty12345%;
