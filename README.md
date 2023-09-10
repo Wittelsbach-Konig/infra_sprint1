@@ -80,12 +80,12 @@ Kittygram - социальная сеть для выкладывания фот
 
 	location /api/ {
 	    proxy_pass http://127.0.0.1:8080;
-     client_max_body_size 20M;
+            client_max_body_size 20M;
 	}
-	       location /admin/ {
-			  proxy_pass http://127.0.0.1:8080;
-     client_max_body_size 20M;
-			     }
+	location /admin/ {
+	    proxy_pass http://127.0.0.1:8080;
+            client_max_body_size 20M;
+	}
 	location / {
 	    root   /var/www/<имя_проекта>;
 	    index  index.html index.htm;
