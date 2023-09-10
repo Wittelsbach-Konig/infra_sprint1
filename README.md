@@ -86,12 +86,14 @@ Kittygram - социальная сеть для выкладывания фот
 	    proxy_pass http://127.0.0.1:8080;
             client_max_body_size 20M;
 	}
+	location /media/ {
+	    alias /var/www/kittygram/media/;
+        }
 	location / {
 	    root   /var/www/<имя_проекта>;
 	    index  index.html index.htm;
 	    try_files $uri /index.html;
 	}
-
     }
   ```
   - Сохранить изменения, проверить и перезагрузить конфигурацию веб-сервера:
