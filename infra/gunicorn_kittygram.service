@@ -1,5 +1,5 @@
 [Unit]
-Description=gunicorn daemon
+Description=gunicorn daemon for kittygram project
 After=network.target
 [Service]
 User=yc-user
